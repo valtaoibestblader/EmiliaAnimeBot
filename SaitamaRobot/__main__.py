@@ -430,7 +430,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/{}?start=help".format(context.bot.username),
+                            url="t.me/{http://t.me/aigerakabanethebladerbot}?start=help".format(context.bot.username),
                         )
                     ]
                 ]
