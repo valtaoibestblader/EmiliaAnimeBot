@@ -733,6 +733,6 @@ def main():
 
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
-    telethn.start(bot_token=1949696894:AAGlDTM-yUnwaXSwfD56nF1iU-8h_VKwXVk)
+    telethn.start(Bot token)
     pgram.start()
     main()
