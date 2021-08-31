@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👩‍💼](https://telegra.ph/file/b833e2fffc22b8e85e5e9.jpg) `My name is` *Aiger akabane*
+`Hey There!` [👩‍💼](https://telegra.ph/file/eb183a86b5fc974b56d99.jpg) `My name is` *Valt Aoi*
 `I am an beyblade Themed group management bot.
 Managed by Z bot support for Your Telegram Group , I specialize in managing beyblade and similar themed groups.
 You can find my list of available commands with! Hit` *🔐Commands*   
@@ -62,7 +62,7 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD Aiger akabane TO YOUR GROUP ➕️",url="http://t.me/aigerakabanethebladerbot"),
+            text="➕️ ADD Valt Aoi  TO YOUR GROUP ➕️",url="http://t.me/Valtaoibestbot"),
     ],
     [
         InlineKeyboardButton(
@@ -71,33 +71,33 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="📮 Update Channel", url="https://t.me/BBTTbotssupport"),
+            text="📮 Update Channel", url="https://t.me/botcreaterss"),
     ],
     [
         InlineKeyboardButton(
-            text="📑 Loges", url="https://t.me/logforaigerakabane"),
+            text="🤗Fun chat ", url="https://t.me/CrimsonDragon"),
           
 
 
 InlineKeyboardButton(
-            text="🐱 SUPPORT", url="https://t.me/BBTTbotssupport"
+            text="🐱 SUPPORT", url="https://t.me/FreeLogogiveway"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="🍀Beyblade🍀", url="https://t.me/Aigerakabaneblader"
+                    text="🍀Beyblade🍀", url="https://t.me/beybladefunchat"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Aiger akabane]("https://telegra.ph/file/b833e2fffc22b8e85e5e9.jpg") 
+`Hey there! My name is` [Valt Aoi ]("https://telegra.ph/file/eb183a86b5fc974b56d99.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paytm](#) or by contacting @Zbotsupport\
+ You can support the project via [Paytm](#) or by contacting\
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -344,14 +344,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Aiger Akabane*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Valt Aoi*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *Aiger Akabane*, let us know at .""",
+                 \n\nIf you have any question about *Valt Aoi*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -377,8 +377,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *Aiger akabane*
-                 \nHere is the [Our Beyblade Group](https://t.me/Aigerakabaneblader) .""",
+            text=""" Hi..👩‍💼 I'm *Valt Aoi *
+                 \nHere is the [Our Beyblade Group](https://t.me/beybladefunchat) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -430,7 +430,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/{http://t.me/aigerakabanethebladerbot}?start=help".format(context.bot.username),
+                            url="http://t.me/Valtaoibestbot".format(context="valtaoibestbot"),
                         )
                     ]
                 ]
@@ -733,6 +733,6 @@ def main():
 
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
-    telethn.start(Bot token)
+    telethn.start(Bot token="1972630485:AAEPoUn4t8F_6vuCu6YwF-hE3YvS2yvd1hs")
     pgram.start()
     main()
