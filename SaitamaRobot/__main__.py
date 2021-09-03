@@ -53,16 +53,19 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👩‍💼](https://telegra.ph/file/eb183a86b5fc974b56d99.jpg) `My name is` *Valt Aoi*
-`I am an beyblade Themed group management bot.
-Managed by Z bot support for Your Telegram Group , I specialize in managing beyblade and similar themed groups.
+`Hey There!` [👸](https://telegra.ph/file/9b9a47319270db245a019.jpg) `My name is` *GINGKA HAGANE*
+
+I am an Beyblade Themed group management bot.
+Managed by Pigasus Updates for Your Telegram Group
+Join @PigasusUpdates & @PigasusSupport.
+
 You can find my list of available commands with! Hit` *🔐Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD Valt Aoi  TO YOUR GROUP ➕️",url="http://t.me/Valtaoibestbot"),
+            text="[ADD SHU KURENAI TO YOUR GROUP]",url="t.me/GIngahaganebot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -71,33 +74,33 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="📮 Update Channel", url="https://t.me/botcreaterss"),
+            text="[UPDATE CHANNEL ]", url="https://t.me/pigasusUpdates"),
     ],
     [
         InlineKeyboardButton(
-            text="🤗Fun chat ", url="https://t.me/CrimsonDragon"),
+            text="[ SUPPORT CHAT ]", url="https://t.me/pigasusSupport"),
           
 
 
 InlineKeyboardButton(
-            text="🐱 SUPPORT", url="https://t.me/FreeLogogiveway"
+            text="[ CHECK MY FRIEND ]", url="http://t.me/ShuKurenaithebot"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="🍀Beyblade🍀", url="https://t.me/beybladefunchat"
+                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Valt Aoi ]("https://telegra.ph/file/eb183a86b5fc974b56d99.jpg") 
+`Hey there! My name is` [GINGKA HAGANE]("https://telegra.ph/file/9b9a47319270db245a019.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paytm](#) or by contacting @crimsonflashs \
+ You can support the project via [Paytm](#) or by contacting @Rohith_no_1\
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -208,11 +211,21 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+        update.effective_message.reply_photo(
+            EMILIA_IMG, caption= "`GINGKA is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [
+                  InlineKeyboardButton(text="[ ✘Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ✘ ]", url="https://t.me/pigasusSupport")
+                  ],
+                  [
+                  InlineKeyboardButton(text="[ ✘Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1")
+                  ]
+                ]
+            ),
         )
 
 
@@ -344,14 +357,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Valt Aoi*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *GINGKA HAGANE*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *Valt Aoi*, let us know at .""",
+                 \n\nIf you have any question about *GINGKA HAGANE*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -377,8 +390,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *Valt Aoi *
-                 \nHere is the [Our Beyblade Group](https://t.me/beybladefunchat) .""",
+            text=""" Hi..👸 I'm *GINGKA HAGANE*
+                 \nHere is the [Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ](https://t.me/pigasusSupport) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -430,7 +443,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="http://t.me/Valtaoibestbot".format(context="valtaoibestbot"),
+                            url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
                 ]
@@ -593,7 +606,7 @@ def get_settings(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "Click here to get this chat's settings, as well as yours."
-            msg.reply_text(https://t.me/BBTTbotssupport
+            msg.reply_text(
                 text,
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -675,7 +688,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm online now! 👩‍💼")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Hᴇʏ Yᴏᴜʀ GINGKA HAGANE Is Oɴʟɪɴᴇ")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -733,6 +746,6 @@ def main():
 
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
-    bot token =Token ")
+    telethn.start(bot_token=TOKEN)
     pgram.start()
     main()
