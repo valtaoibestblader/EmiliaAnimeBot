@@ -56,7 +56,9 @@ PM_START_TEXT = """
 `Hey There!` [👸](https://telegra.ph/file/9b9a47319270db245a019.jpg) `My name is` *GINGKA HAGANE*
 
 I am an Beyblade Themed group management bot.
+
 Managed by Pigasus Updates for Your Telegram Group
+
 Join @PigasusUpdates & @PigasusSupport.
 
 You can find my list of available commands with! Hit` *🔐Commands*   
