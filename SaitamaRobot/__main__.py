@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👸](https://telegra.ph/file/9b9a47319270db245a019.jpg) `My name is` *GINGKA HAGANE*
+`Hey There!` [👸](https://telegra.ph/file/eb183a86b5fc974b56d99.jpg) `My name is` *VALT AOI*
 
 I am an Beyblade Themed group management bot.
 
@@ -67,7 +67,7 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="[ADD SHU KURENAI TO YOUR GROUP]",url="t.me/GIngahaganebot?startgroup=true"),
+            text="[ADD VALT AOI TO YOUR GROUP]",url="t.me/valtaoibladerbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -91,14 +91,14 @@ InlineKeyboardButton(
     ],
     [
         InlineKeyboardButton(
-                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1"
+                    text="[ ✘BOT creator ]", url="https://t.me/Rohith_no_1"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [GINGKA HAGANE] ("https://telegra.ph/file/9b9a47319270db245a019.jpg") 
+`Hey there! My name is` [VALT AOI] ("https://telegra.ph/file/eb183a86b5fc974b56d99.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -359,14 +359,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *GINGKA*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *VALT*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *GINGKA*, let us know at .""",
+                 \n\nIf you have any question about *VALT*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -392,7 +392,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👸 I'm *GINGKA HAGANE*
+            text=""" Hi..👸 I'm *VALT AOI*
                  \nHere is the [Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ](https://t.me/pigasusSupport) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
