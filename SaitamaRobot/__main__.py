@@ -98,7 +98,7 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [GINGKA HAGANE]("https://telegra.ph/file/9b9a47319270db245a019.jpg") 
+`Hey there! My name is` [GINGKA HAGANE] ("https://telegra.ph/file/9b9a47319270db245a019.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "`GINGKA is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
+            EMILIA_IMG, caption= "`Emilla is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
