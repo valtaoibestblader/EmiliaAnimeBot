@@ -84,13 +84,13 @@ buttons = [
 
 
 InlineKeyboardButton(
-            text="[ CHECK MY FRIEND ]", url="https://t.me/PigasusLogs"
+            text="[ CHECK MY FRIEND ]", url="http://t.me/ShuKurenaithebot"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="http://t.me/ShuKurenaithebot"
+                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1"
         ),
     ],
 ]
