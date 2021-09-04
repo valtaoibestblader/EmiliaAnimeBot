@@ -55,10 +55,9 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 `Hey There!` [👸](https://telegra.ph/file/eb183a86b5fc974b56d99.jpg) `My name is` *VALT AOI*
 
-I am an Beyblade Themed group management bot.
+`I am an cartoon Themed group management bot.
 
 Managed by Pigasus Updates for Your Telegram Group
-
 Join @PigasusUpdates & @PigasusSupport.
 
 You can find my list of available commands with! Hit` *🔐Commands*   
@@ -67,7 +66,7 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="[ADD VALT AOI TO YOUR GROUP]",url="t.me/valtaoibladerbot?startgroup=true"),
+            text="[ADD GINGKA HAGANE TO YOUR GROUP]",url="t.me/valtaoibladerbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -85,20 +84,20 @@ buttons = [
 
 
 InlineKeyboardButton(
-            text="[ CHECK MY FRIEND ]", url="http://t.me/ShuKurenaithebot"
+            text="[ CHECK MY FRIEND ]", url="https://t.me/PigasusLogs"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="[ ✘BOT creator ]", url="https://t.me/Rohith_no_1"
+                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="http://t.me/ShuKurenaithebot"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [VALT AOI] ("https://telegra.ph/file/eb183a86b5fc974b56d99.jpg") 
+`Hey there! My name is` [VALT AOI]("https://telegra.ph/file/eb183a86b5fc974b56d99.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -214,7 +213,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "`Emilla is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
+            EMILIA_IMG, caption= "`Emilia is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -359,14 +358,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *VALT*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *VALT AOI*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *VALT*, let us know at .""",
+                 \n\nIf you have any question about *VALT AOI*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -690,7 +689,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Hᴇʏ Yᴏᴜʀ GINGKA HAGANE Is Oɴʟɪɴᴇ")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ʏᴏᴜʀ VALT AOI ɪs ᴏɴʟɪɴᴇ ᴄʜᴇᴄᴋ ᴍʏ Friend - @ShuKurenaithebot")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
