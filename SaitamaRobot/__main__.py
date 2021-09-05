@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo
-            EMILIA_IMG, caption= "`VALT AOI is Here For You❤\nI am Awake Since:``  <code>{}</code>".format(
+            EMILIA_IMG, caption= "`Emilla is Here For You❤\nI am Awake Since:``  <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
