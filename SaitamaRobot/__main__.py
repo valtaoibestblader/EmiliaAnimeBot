@@ -63,7 +63,7 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="[ADD SHU KURENAI TO YOUR GROUP]",url="t.me/VALTAOITHEBOT?startgroup=true"),
+            text="[ADD VALT AOI TO YOUR GROUP]",url="t.me/VALTAOITHEBOT?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
