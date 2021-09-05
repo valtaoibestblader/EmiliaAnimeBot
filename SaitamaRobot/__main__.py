@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👸](https://telegra.ph/file/eb183a86b5fc974b56d99.jpg) `My name is` *VALT AOI*
+`Hey There!` [👸](https://telegra.ph/file/036b765b6ec69b6eaa68b.mp4) `My name is` *VALT AOI*
 
 `I am an cartoon Themed group management bot.
 
@@ -66,7 +66,7 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="[ADD GINGKA HAGANE TO YOUR GROUP]",url="t.me/valtaoibladerbot?startgroup=true"),
+            text="[ADD VALT AOI TO YOUR GROUP]",url="t.me/valtaoibladerbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -97,7 +97,7 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [VALT AOI]("https://telegra.ph/file/eb183a86b5fc974b56d99.jpg") 
+`Hey there! My name is` [VALT AOI]("https://telegra.ph/file/036b765b6ec69b6eaa68b.mp4") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
