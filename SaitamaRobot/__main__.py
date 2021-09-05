@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [🧑]🏻‍💻(https://telegra.ph/file/036b765b6ec69b6eaa68b.mp4) `My name is` *VALT AOI*
+`Hey There!` [🧑](https://telegra.ph/file/036b765b6ec69b6eaa68b.mp4) `My name is` *VALT AOI*
 `I am an cartoon Themed group management bot.
 Managed by Pigasus Updates for Your Telegram Group
 Join @PigasusUpdates & @PigasusSupport.
