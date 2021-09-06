@@ -213,8 +213,8 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_photo("https://telegra.ph/file/036b765b6ec69b6eaa68b.mp4"
-            EMILIA_IMG, caption= "`valt aoi  is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
+        update.effective_message.reply_photo(
+            EMILIA_IMG, caption= "`EMILLA is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
