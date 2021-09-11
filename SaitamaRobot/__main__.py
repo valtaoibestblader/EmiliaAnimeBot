@@ -84,8 +84,8 @@ buttons = [
           
 
 
-InlineKeyboardButton(
-            text="[ CHECK MY FRIEND ]", url="http://t.me/ShuKurenaithebot"
+        InlineKeyboardButton(
+           text="✒ Source", callback_data="source_"
         ),
 
     ],
